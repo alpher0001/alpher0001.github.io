@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- nth just a simple script to chnage the title in every 0.1 sec and make it dynamic lol    -->
+  	<script>
+//dynamic title.
+function animateTitle() {
+    i >= message.length - 1 ? (i = 0) : i++,
+      (document.title = message[i]),
+//   document.title.style.fontFamily = 
+// i wanna fix this later on ...
+      setTimeout('animateTitle()', 100)
+  }
+  var message = [
+'WORK IN PROGRESS...',
+'ㅤ',
+'W',
+'WO',
+'WOR',
+'WORK',
+'WORK ',
+'WORK I',
+'WORK IN',
+'WORK IN ',
+'WORK IN P',
+'WORK IN PR',
+'WORK IN PRO',
+'WORK IN PROG',
+'WORK IN PROGR',
+'WORK IN PROGRE',
+'WORK IN PROGRES',
+'WORK IN PROGRESS',
+'WORK IN PROGRESS.',
+'WORK IN PROGRESS..',
+'WORK IN PROGRESS...',
+  ],
+    i = 0
+  animateTitle()
+    </script>
+<!-- nth just added a custom style.css and one of teh google font below it  --> 
+      <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <title> WORK IN PROGRESS...
+    </title>
+    </head>
+    <body>
+<!-- div having id as main and class to chd  in repective to it and finalt a text to display in h1 font form with a custom css and gfont --> 	
+<div id="main">
+      <div class="chd">
+            <h1>WORK IN PROGRESS...</h1>
+      </div>
+</div>
+    </body>
+</html>
