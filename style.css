@@ -6,10 +6,13 @@ html {
     height: 100%;
 }
 
-body{
-   font-family: 'Lilita One', cursive;
-    color: #888;
-    margin: 0;
+body { 
+    font-family: 'Lilita One', cursive;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh; 
+	margin: 0;
 }
 
 #main{
@@ -33,5 +36,18 @@ body{
 
 @keyframes type{
     from{box-shadow: inset -3px 0px 0px #888;}
-    to{box-shadow: inset -3px 0px 0px transparent;}
+    to{box-shadow: inset -3px 0px 0px black;}
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
